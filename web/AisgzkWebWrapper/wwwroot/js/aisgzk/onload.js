@@ -1,1 +1,3 @@
-﻿console.log('GeoCom body onload')
+﻿$(document).ready(() => {
+    console.log('GeoCom body onload jquery')
+})
