@@ -1,1 +1,4 @@
-﻿console.log('GeoCom')
+﻿document.body.onload += () => {
+    console.log('GeoCom body onload')
+
+}
