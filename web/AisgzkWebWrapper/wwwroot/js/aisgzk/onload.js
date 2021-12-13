@@ -24,7 +24,8 @@ const routes = {
 const run = () => {
     const url = document.location.pathname + document.location.search;
     const ctrl = window['aisgzkV2Ctrl'][routes[url]];
-    ctrl.onload()
+    if (ctrl)
+        ctrl.onload()
 }
 
 let stateCheck = setInterval(() => {
