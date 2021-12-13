@@ -15,7 +15,7 @@ const scriptList = ['/wwwroot/js/aisgzk/ctrl/pzu.js'];
 const loadAllScriptFiles = () => {
     scriptList.forEach(scr => inlcude(siteRoot + scr));
 }
-
+loadAllScriptFiles();
 const routes = {
     '/aisgzk/ru/content/maps?type=pu-sp': 'pzu',
 }
