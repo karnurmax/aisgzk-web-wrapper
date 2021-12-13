@@ -13,10 +13,11 @@ const include = (scriptUrl) => {
 const siteRoot = "https://raw.githubusercontent.com/karnurmax/aisgzk-web-wrapper/master/web/AisgzkWebWrapper";
 const scriptList = ['/wwwroot/js/aisgzk/ctrl/pzu.js'];
 const loadAllScriptFiles = () => {
-    scriptList.forEach(scr => inlcude(siteRoot + scr));
+    scriptList.forEach(scr => include(siteRoot + scr));
 }
 loadAllScriptFiles();
 const routes = {
+    '/aisgzk/kz/content/maps?type=pu-sp': 'pzu',
     '/aisgzk/ru/content/maps?type=pu-sp': 'pzu',
 }
 
